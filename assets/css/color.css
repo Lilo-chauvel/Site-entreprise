@@ -1,0 +1,24 @@
+:root{
+  --bs-success-rgb: 182, 226, 182;
+  --bs-info-rgb: 182, 215, 226;
+  --bs-danger-rgb: 226, 182, 182;
+  --bs-body-bg :#dfdfdf;
+}
+
+p{
+  --bs-danger-rgb: 255,0,0;
+}
+
+
+.btn-success {
+    --bs-btn-color: #000000;
+    --bs-btn-bg: #b6e2b6;
+    --bs-btn-border-color: #b6e2b6;
+    --bs-btn-hover-color: #000000;
+    --bs-btn-hover-bg: #a7dfa7;
+    --bs-btn-hover-border-color: #dfdfdf;
+    --bs-btn-active-bg: #a7dfa7;
+    --bs-btn-active-border-color: #a7dfa7;
+    --bs-btn-disabled-bg: #b6e2b6;
+    --bs-btn-disabled-border-color: #b6e2b6;
+}

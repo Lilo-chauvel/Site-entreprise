@@ -1,0 +1,427 @@
+/*Mise en forme texte*/
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+#parenthese {
+    font-size: 0.7em;
+    list-style-type: none;
+}
+
+h1,
+h2 {
+    font-family: 'Poppins', sans-serif;
+
+    margin: 0px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+main h1 {
+    text-align: center;
+    background-color: #b6e2b6;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    text-align: center;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    margin: 0px;
+    background-color: #dfdfdf;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+footer {
+    background-color: rgb(182, 215, 226);
+}
+
+header {
+    padding: 10px;
+    background-color: #b6d7e2;
+}
+
+header h2,
+p {
+    margin: 15px;
+}
+
+.index-page header {
+    display: flex;
+    justify-content: end;
+}
+
+ul {
+    padding-left: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.identite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Mise en forme général*/
+
+
+/* Mise en forme pages CV */
+
+header section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.block_presentation,
+.formation,
+.experiences {
+    padding: 15px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.block_presentation {
+    background-color: #b6e2b6;
+}
+
+.formation,
+.experiences {
+    background-color: rgb(226, 182, 182);
+}
+
+.icone {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/*Mise en page trombinoscope*/
+
+.identite_tr {
+    background-color: #b6d7e2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+.identite_tr h2 {
+    margin: 15px;
+}
+
+.description_tr {
+    background-color: #e2b6b6;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 25px;
+}
+
+/*Gestion des images*/
+.photo_corentin,
+.CV_Corentin img {
+    width: 308px;
+    height: 411px;
+    border-radius: 50px;
+}
+
+.photo_lilo,
+.CV_Lilo img {
+    width: 310px;
+    height: 466px;
+    border-radius: 50px;
+}
+
+.block_presentation img {
+    width: 30px;
+}
+
+.campus {
+    width: 100%;
+    filter: brightness(75%)
+}
+
+.nav_icone {
+    width: 30px;
+}
+
+.card{
+    border-radius: 20px;
+}
+
+/*Mise en page index*/
+
+.partie_gauche div,
+.partie_droite div {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.description {
+    background-color: #e2b6b6;
+}
+
+.histoire,
+.services,
+.client {
+    background-color: #b6d7e2;
+}
+
+.bouton a {
+    text-align: center;
+    background-color: #b6e2b6;
+    width: 250px;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+.bouton {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+@media (728px <=width <=1080px) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header section {
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .partie-gauche {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .block_presentation {
+        width: 41%;
+    }
+
+    .partie-droite {
+        margin: 24px;
+    }
+
+    .CV_Lilo,
+    .CV_Corentin {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    .identite_tr {
+        width: 35%;
+        margin-left: 20px;
+        border-radius: 20px;
+    }
+
+    .description_tr {
+        width: 60%;
+    }
+
+    #trombinoscope_titre,
+    #index_titre {
+        margin-left: 25%;
+        margin-right: 25%;
+        border-radius: 15px;
+    }
+
+    .partie_gauche div,
+    .partie_droite div {
+        margin: 20px;
+        border-radius: 20px;
+    }
+}
+
+@media (width >1080px) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }   
+    
+    header section {
+        justify-content: center;
+        padding: 50px;
+    }
+
+    header p {
+        padding: 70px;
+    }
+
+    body {
+        font-size: 1.4em;
+    }
+
+    header h1,
+    header h2 {
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .partie-droite {
+        width: 65%;
+    }
+
+    .partie-gauche{
+        width: 30%;
+    }
+
+    .block_presentation {
+
+        margin-bottom: 40px;
+        padding: 20px;
+    }
+
+    .dirigeant {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .identite_tr {
+        height: 670px;
+        margin-left: 220px;
+        margin-right: 220px;
+        border-radius: 40px;
+    }
+
+    .identite_tr h3 {
+        text-align: center;
+    }
+
+    #trombinoscope_titre {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .trombinoscope-page header {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .trombinoscope-page main,
+    .index-page main {
+        margin-bottom: 75px;
+    }
+
+    .index-page main {
+        margin-top: 0px;
+    }
+
+    .index-page header {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .campus {
+        height: 800px;
+    }
+
+    .image_entreprise {
+        height: 650px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #index_titre {
+        background-color: transparent;
+        color: #d1d1d1;
+        position: absolute;
+        top: 300px;
+        font-size: 3em;
+    }
+
+    .accueil {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 6%;
+    }
+
+    .partie_gauche {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        order: 2;
+    }
+
+    .partie_droite {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        order: 3;
+
+    }
+
+    .bouton {
+        order: 1;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+
+    .partie_gauche div {
+
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .partie_droite div {
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+}
